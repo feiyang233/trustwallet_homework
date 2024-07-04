@@ -53,3 +53,4 @@ docker login
 
 docker push feiyang233/proxy-client:v1
 ```
+You can get this image from https://hub.docker.com/r/feiyang233/proxy-client/tags
