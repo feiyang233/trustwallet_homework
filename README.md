@@ -56,11 +56,13 @@ ok      blockchain-client       0.315s
 ## docker build and upload to docker hub
 You can build and upload to your docker hub space
 ```shell
-docker build -t feiyang233/proxy-client:v1 .
+docker build --platform linux/arm64 -t feiyang233/proxy-client:arm64 .
+docker build --platform linux/amd64 -t feiyang233/proxy-client:amd64 .
 
 docker login
 
-docker push feiyang233/proxy-client:v1
+docker push feiyang233/proxy-client:arm64
+docker push feiyang233/proxy-client:amd64
 ```
 You can get this image from https://hub.docker.com/r/feiyang233/proxy-client/tags
 

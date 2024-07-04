@@ -28,7 +28,7 @@ variable "az_count" {
 
 variable "app_image" {
   description = "Docker image to run in the ECS cluster, we also can use ECR"
-  default     = "feiyang233/proxy-client:v1"
+  default     = "feiyang233/proxy-client:amd64"
 }
 
 variable "app_port" {
